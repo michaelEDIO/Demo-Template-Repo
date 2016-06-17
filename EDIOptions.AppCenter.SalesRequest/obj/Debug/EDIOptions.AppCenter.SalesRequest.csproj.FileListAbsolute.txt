@@ -1,0 +1,8 @@
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.SalesRequest\bin\Debug\EDIOptions.AppCenter.SalesRequest.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.SalesRequest\bin\Debug\EDIOptions.AppCenter.SalesRequest.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.SalesRequest\bin\Debug\EDIOptions.AppCenter.Core.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.SalesRequest\bin\Debug\Newtonsoft.Json.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.SalesRequest\bin\Debug\EDIOptions.AppCenter.Core.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.SalesRequest\obj\Debug\EDIOptions.AppCenter.SalesRequest.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.SalesRequest\obj\Debug\EDIOptions.AppCenter.SalesRequest.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.SalesRequest\obj\Debug\EDIOptions.AppCenter.SalesRequest.csprojResolveAssemblyReference.cache

@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{482AB645-F2E4-40CE-972E-16B46A3C9547}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EDIOptCenterNet</RootNamespace>
+    <AssemblyName>EDIOptCenterNet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=d416e06ba38079d0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.aspx" />
+    <Content Include="CatalogXref.aspx" />
+    <Content Include="ChangePO.aspx" />
+    <Content Include="Css\common.css" />
+    <Content Include="Css\idm.css" />
+    <Content Include="Css\jquery.jqplot.min.css" />
+    <Content Include="Css\salesreq.css" />
+    <Content Include="Css\screen.css" />
+    <Content Include="Css\ui-darkness\Images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Css\ui-darkness\Images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Css\ui-darkness\Images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Css\ui-darkness\Images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Css\ui-darkness\Images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Css\ui-darkness\Images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="Css\ui-darkness\Images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="Css\ui-darkness\Images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="Css\ui-darkness\Images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="Css\ui-darkness\Images\ui-icons_222222_256x240.png" />
+    <Content Include="Css\ui-darkness\Images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Css\ui-darkness\Images\ui-icons_a83300_256x240.png" />
+    <Content Include="Css\ui-darkness\Images\ui-icons_cccccc_256x240.png" />
+    <Content Include="Css\ui-darkness\Images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Css\ui-darkness\jquery-ui.css" />
+    <Content Include="DemoTemplate.aspx" />
+    <Content Include="Download.aspx" />
+    <Content Include="EDI.asmx" />
+    <Content Include="GVMCostReport.aspx" />
+    <Content Include="IDM.aspx" />
+    <Content Include="Images\403.png" />
+    <Content Include="Images\404.png" />
+    <Content Include="Images\account-drop-down.png" />
+    <Content Include="Images\account-options-arrow-dark.png" />
+    <Content Include="Images\account-options-arrow.gif" />
+    <Content Include="Images\acknowledge.png" />
+    <Content Include="Images\ad1-on.png" />
+    <Content Include="Images\ad1.png" />
+    <Content Include="Images\ad2-on.gif" />
+    <Content Include="Images\ad2.gif" />
+    <Content Include="Images\ad3-on.png" />
+    <Content Include="Images\ad3.png" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\all-items-on.png" />
+    <Content Include="Images\all-items-sm-on.png" />
+    <Content Include="Images\all-items-sm.png" />
+    <Content Include="Images\all-items.png" />
+    <Content Include="Images\arrow-down-lg.png" />
+    <Content Include="Images\arrow-down.png" />
+    <Content Include="Images\arrow-next.png" />
+    <Content Include="Images\arrow-previous.png" />
+    <Content Include="Images\arrow-right-sm.png" />
+    <Content Include="Images\arrow-right.png" />
+    <Content Include="Images\arrow-up.png" />
+    <Content Include="Images\bad-url.png" />
+    <Content Include="Images\bg-black-gradient-sm.jpg" />
+    <Content Include="Images\bg-black-gradient.jpg" />
+    <Content Include="Images\bg-black-strip.gif" />
+    <Content Include="Images\bg-blue.gif" />
+    <Content Include="Images\bg-chalk.jpg" />
+    <Content Include="Images\bg-chart-tbl.png" />
+    <Content Include="Images\bg-green.gif" />
+    <Content Include="Images\bg-grey-strip.gif" />
+    <Content Include="Images\bg-orange.gif" />
+    <Content Include="Images\bg-purple.gif" />
+    <Content Include="Images\bg-removed-dark.gif" />
+    <Content Include="Images\bg-removed-light.gif" />
+    <Content Include="Images\bg-striped-white.gif" />
+    <Content Include="Images\bg-tbl-highlight.gif" />
+    <Content Include="Images\bg-tbl-row-dark.gif" />
+    <Content Include="Images\bg-tbl-row-light.gif" />
+    <Content Include="Images\carton-all.png" />
+    <Content Include="Images\carton-one.png" />
+    <Content Include="Images\close-btn.png" />
+    <Content Include="Images\combine.png" />
+    <Content Include="Images\contact-support-on.png" />
+    <Content Include="Images\contact-support.png" />
+    <Content Include="Images\create.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\details.png" />
+    <Content Include="Images\documents-guide-lg-on.png" />
+    <Content Include="Images\documents-guide-lg.png" />
+    <Content Include="Images\documents-guide-sm-on.png" />
+    <Content Include="Images\documents-guide-sm.png" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\draggable-footer.png" />
+    <Content Include="Images\EDI-OptCenter.png" />
+    <Content Include="Images\EDI-Options-logo.png" />
+    <Content Include="Images\edit-header-data.png" />
+    <Content Include="Images\edit-send-date.png" />
+    <Content Include="Images\email.png" />
+    <Content Include="Images\file-csv-lg.png" />
+    <Content Include="Images\file-csv-med.png" />
+    <Content Include="Images\file-csv-sm.png" />
+    <Content Include="Images\file-pdf-lg.png" />
+    <Content Include="Images\file-pdf-med.png" />
+    <Content Include="Images\file-pdf-sm.png" />
+    <Content Include="Images\file-txt-lg.png" />
+    <Content Include="Images\file-txt-med.png" />
+    <Content Include="Images\file-txt-sm.png" />
+    <Content Include="Images\file-xls-lg.png" />
+    <Content Include="Images\file-xls-med.png" />
+    <Content Include="Images\file-xls-sm.png" />
+    <Content Include="Images\filter.png" />
+    <Content Include="Images\gradient.png" />
+    <Content Include="Images\handshake.png" />
+    <Content Include="Images\info-icon.png" />
+    <Content Include="Images\item-collection-black.png" />
+    <Content Include="Images\item-collection-grey.png" />
+    <Content Include="Images\loading-animation.gif" />
+    <Content Include="Images\missing-page.png" />
+    <Content Include="Images\one-item-on.png" />
+    <Content Include="Images\one-item-sm-on.png" />
+    <Content Include="Images\one-item-sm.png" />
+    <Content Include="Images\one-item.png" />
+    <Content Include="Images\optcenter-guide-lg-on.png" />
+    <Content Include="Images\optcenter-guide-lg.png" />
+    <Content Include="Images\optcenter-guide-sm-on.png" />
+    <Content Include="Images\optcenter-guide-sm.png" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\question-mark.png" />
+    <Content Include="Images\red-arrow-8x8.png" />
+    <Content Include="Images\red-arrow-down-lg.png" />
+    <Content Include="Images\red-arrow-right-lg.png" />
+    <Content Include="Images\remove.png" />
+    <Content Include="Images\reset.png" />
+    <Content Include="Images\scheduled.png" />
+    <Content Include="Images\side-help-on.png" />
+    <Content Include="Images\side-help.png" />
+    <Content Include="Images\simplify-your-edi.png" />
+    <Content Include="Images\speech-bubble.png" />
+    <Content Include="Images\status-green-sm.png" />
+    <Content Include="Images\status-green.png" />
+    <Content Include="Images\status-grey.png" />
+    <Content Include="Images\status-red-sm.png" />
+    <Content Include="Images\status-red.png" />
+    <Content Include="Images\status-yellow-sm.png" />
+    <Content Include="Images\status-yellow.png" />
+    <Content Include="Images\table-refine.png" />
+    <Content Include="Images\table-reset.png" />
+    <Content Include="Images\table-search.png" />
+    <Content Include="Images\testing-guide-lg-on.png" />
+    <Content Include="Images\testing-guide-lg.png" />
+    <Content Include="Images\testing-guide-sm-on.png" />
+    <Content Include="Images\testing-guide-sm.png" />
+    <Content Include="Images\tooltip-arrow.png" />
+    <Content Include="Images\tooltip-close-btn.png" />
+    <Content Include="Images\top-nav-sub-nav-arrow.gif" />
+    <Content Include="Images\validated.png" />
+    <Content Include="Images\view-all.png" />
+    <Content Include="Images\view-excluded.png" />
+    <Content Include="Images\view-included.png" />
+    <Content Include="Images\view-invalid.png" />
+    <Content Include="Images\wbu-asn.png" />
+    <Content Include="Images\wbu-d2c.png" />
+    <Content Include="Images\wbu-header.png" />
+    <Content Include="Images\wc-light.png" />
+    <Content Include="Images\wc-rule-blue.png" />
+    <Content Include="Images\wc-rule-orange.png" />
+    <Content Include="Images\wc-rule-pink.png" />
+    <Content Include="Images\wc-rule-yellow.png" />
+    <Content Include="Images\working-animation.gif" />
+    <Content Include="Images\x.png" />
+    <Content Include="IntegrationManager.aspx" />
+    <Content Include="LocationReport.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="POAcknowledge.aspx" />
+    <Content Include="PoDropShip.aspx" />
+    <Content Include="SalesRequest.aspx" />
+    <Content Include="Scripts\all-pgs.js" />
+    <Content Include="Scripts\bigSlide.min.js" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="Scripts\ChangePO\main.js" />
+    <Content Include="Scripts\DET\main.js" />
+    <Content Include="Scripts\GVM\main.js" />
+    <Content Include="Scripts\ITM\main.js" />
+    <Content Include="Scripts\LOC\main.js" />
+    <Content Include="Scripts\Login\main.js" />
+    <Content Include="Scripts\PDS\main.js" />
+    <Content Include="Scripts\POAcknowledge\main.js" />
+    <Content Include="Scripts\pagetable.js" />
+    <Content Include="Scripts\window.js" />
+    <Content Include="Scripts\IDM\main.js" />
+    <Content Include="Scripts\excanvas.min.js" />
+    <Content Include="Scripts\jquery.stickytableheaders.min.js" />
+    <Content Include="Scripts\Welcome\main.js" />
+    <Content Include="Scripts\jqplot.highlighter.min.js" />
+    <Content Include="Scripts\jqplot.pieRenderer.min.js" />
+    <Content Include="Scripts\jquery-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.jqplot.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr.min.js" />
+    <Content Include="Scripts\numbers.js" />
+    <Content Include="Scripts\PersistentTableHeads.js" />
+    <Content Include="Scripts\SalesRequest\main.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\XCT\main.js" />
+    <Content Include="Upload.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogXref.aspx.cs">
+      <DependentUpon>CatalogXref.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatalogXref.aspx.designer.cs">
+      <DependentUpon>CatalogXref.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePO.aspx.cs">
+      <DependentUpon>ChangePO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePO.aspx.designer.cs">
+      <DependentUpon>ChangePO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DemoTemplate.aspx.cs">
+      <DependentUpon>DemoTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemoTemplate.aspx.designer.cs">
+      <DependentUpon>DemoTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EDI.asmx.cs">
+      <DependentUpon>EDI.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GVMCostReport.aspx.cs">
+      <DependentUpon>GVMCostReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GVMCostReport.aspx.designer.cs">
+      <DependentUpon>GVMCostReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IDM.aspx.cs">
+      <DependentUpon>IDM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IDM.aspx.designer.cs">
+      <DependentUpon>IDM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IntegrationManager.aspx.cs">
+      <DependentUpon>IntegrationManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IntegrationManager.aspx.designer.cs">
+      <DependentUpon>IntegrationManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LocationReport.aspx.cs">
+      <DependentUpon>LocationReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LocationReport.aspx.designer.cs">
+      <DependentUpon>LocationReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POAcknowledge.aspx.cs">
+      <DependentUpon>POAcknowledge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POAcknowledge.aspx.designer.cs">
+      <DependentUpon>POAcknowledge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PoDropShip.aspx.cs">
+      <DependentUpon>PoDropShip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PoDropShip.aspx.designer.cs">
+      <DependentUpon>PoDropShip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesRequest.aspx.cs">
+      <DependentUpon>SalesRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesRequest.aspx.designer.cs">
+      <DependentUpon>SalesRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EDIOptions.AppCenter.CatalogXref\EDIOptions.AppCenter.CatalogXref.csproj">
+      <Project>{4c5ad030-9847-4fc0-8381-88d91ba7bc7d}</Project>
+      <Name>EDIOptions.AppCenter.CatalogXref</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDIOptions.AppCenter.ChangePO\EDIOptions.AppCenter.ChangePO.csproj">
+      <Project>{95515ec3-5668-4cc5-9225-bd74d59d3af1}</Project>
+      <Name>EDIOptions.AppCenter.ChangePO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDIOptions.AppCenter.Core\EDIOptions.AppCenter.Core.csproj">
+      <Project>{fffefbf1-a2fc-4fac-ae82-32d1d0a16a05}</Project>
+      <Name>EDIOptions.AppCenter.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDIOptions.AppCenter.GVMCostReport\EDIOptions.AppCenter.GVMCostReport.csproj">
+      <Project>{14b17077-a185-48df-ae4d-eba314ca4f58}</Project>
+      <Name>EDIOptions.AppCenter.GVMCostReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDIOptions.AppCenter.IntegrationManager\EDIOptions.AppCenter.IntegrationManager.csproj">
+      <Project>{5515beee-d4fd-47b5-b307-eef6b37b5053}</Project>
+      <Name>EDIOptions.AppCenter.IntegrationManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDIOptions.AppCenter.ItemDistributionManager\EDIOptions.AppCenter.ItemDistributionManager.csproj">
+      <Project>{c860ef0c-e614-429f-986b-9850a28a40b3}</Project>
+      <Name>EDIOptions.AppCenter.ItemDistributionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDIOptions.AppCenter.LocationReport\EDIOptions.AppCenter.LocationReport.csproj">
+      <Project>{345414eb-d463-46a3-9984-8614ae53708b}</Project>
+      <Name>EDIOptions.AppCenter.LocationReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDIOptions.AppCenter.POAcknowledge\EDIOptions.AppCenter.POAcknowledge.csproj">
+      <Project>{0835c988-c2dd-4a21-ba95-6bfa1b7971bf}</Project>
+      <Name>EDIOptions.AppCenter.POAcknowledge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDIOptions.AppCenter.PoDropShip\EDIOptions.AppCenter.PoDropShip.csproj">
+      <Project>{432f9ebd-6eaa-4c3b-b699-f41aeb1b857d}</Project>
+      <Name>EDIOptions.AppCenter.PoDropShip</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDIOptions.AppCenter.SalesRequest\EDIOptions.AppCenter.SalesRequest.csproj">
+      <Project>{c16a7463-cdee-40a3-8030-39d3adb87de2}</Project>
+      <Name>EDIOptions.AppCenter.SalesRequest</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52464</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

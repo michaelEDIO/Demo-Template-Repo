@@ -1,0 +1,8 @@
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.IntegrationManager\bin\Debug\EDIOptions.AppCenter.IntegrationManager.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.IntegrationManager\bin\Debug\EDIOptions.AppCenter.IntegrationManager.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.IntegrationManager\bin\Debug\EDIOptions.AppCenter.Core.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.IntegrationManager\bin\Debug\Newtonsoft.Json.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.IntegrationManager\bin\Debug\EDIOptions.AppCenter.Core.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.IntegrationManager\obj\Debug\EDIOptions.AppCenter.IntegrationManager.csprojResolveAssemblyReference.cache
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.IntegrationManager\obj\Debug\EDIOptions.AppCenter.IntegrationManager.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.IntegrationManager\obj\Debug\EDIOptions.AppCenter.IntegrationManager.pdb

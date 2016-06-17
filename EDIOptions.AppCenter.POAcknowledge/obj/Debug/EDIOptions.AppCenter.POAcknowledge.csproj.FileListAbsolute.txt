@@ -1,0 +1,9 @@
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.POAcknowledge\bin\Debug\EDIOptions.AppCenter.POAcknowledge.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.POAcknowledge\bin\Debug\EDIOptions.AppCenter.POAcknowledge.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.POAcknowledge\bin\Debug\EDIOptions.AppCenter.Core.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.POAcknowledge\bin\Debug\Newtonsoft.Json.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.POAcknowledge\bin\Debug\EDIOptions.AppCenter.Core.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.POAcknowledge\obj\Debug\EDIOptions.AppCenter.POAcknowledge.csprojResolveAssemblyReference.cache
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.POAcknowledge\obj\Debug\EDIOptions.AppCenter.POAcknowledge.csproj.ResolveComReference.cache
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.POAcknowledge\obj\Debug\EDIOptions.AppCenter.POAcknowledge.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.POAcknowledge\obj\Debug\EDIOptions.AppCenter.POAcknowledge.pdb

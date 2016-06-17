@@ -1,0 +1,9 @@
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.GVMCostReport\bin\Debug\EDIOptions.AppCenter.GVMCostReport.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.GVMCostReport\bin\Debug\EDIOptions.AppCenter.GVMCostReport.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.GVMCostReport\bin\Debug\EDIOptions.AppCenter.Core.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.GVMCostReport\bin\Debug\Newtonsoft.Json.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.GVMCostReport\bin\Debug\EDIOptions.AppCenter.Core.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.GVMCostReport\obj\Debug\EDIOptions.AppCenter.GVMCostReport.csprojResolveAssemblyReference.cache
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.GVMCostReport\obj\Debug\EDIOptions.AppCenter.GVMCostReport.csproj.ResolveComReference.cache
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.GVMCostReport\obj\Debug\EDIOptions.AppCenter.GVMCostReport.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.GVMCostReport\obj\Debug\EDIOptions.AppCenter.GVMCostReport.pdb

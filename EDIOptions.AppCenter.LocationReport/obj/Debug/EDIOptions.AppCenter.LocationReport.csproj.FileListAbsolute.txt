@@ -1,0 +1,9 @@
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.LocationReport\bin\Debug\EDIOptions.AppCenter.LocationReport.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.LocationReport\bin\Debug\EDIOptions.AppCenter.LocationReport.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.LocationReport\bin\Debug\EDIOptions.AppCenter.Core.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.LocationReport\bin\Debug\Newtonsoft.Json.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.LocationReport\bin\Debug\EDIOptions.AppCenter.Core.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.LocationReport\obj\Debug\EDIOptions.AppCenter.LocationReport.csprojResolveAssemblyReference.cache
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.LocationReport\obj\Debug\EDIOptions.AppCenter.LocationReport.csproj.ResolveComReference.cache
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.LocationReport\obj\Debug\EDIOptions.AppCenter.LocationReport.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.LocationReport\obj\Debug\EDIOptions.AppCenter.LocationReport.pdb

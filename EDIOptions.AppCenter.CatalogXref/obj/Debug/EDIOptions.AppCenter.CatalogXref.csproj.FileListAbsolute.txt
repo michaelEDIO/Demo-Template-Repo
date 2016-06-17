@@ -1,0 +1,8 @@
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.CatalogXref\bin\Debug\EDIOptions.AppCenter.CatalogXref.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.CatalogXref\bin\Debug\EDIOptions.AppCenter.CatalogXref.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.CatalogXref\bin\Debug\EDIOptions.AppCenter.Core.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.CatalogXref\bin\Debug\Newtonsoft.Json.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.CatalogXref\bin\Debug\EDIOptions.AppCenter.Core.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.CatalogXref\obj\Debug\EDIOptions.AppCenter.CatalogXref.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.CatalogXref\obj\Debug\EDIOptions.AppCenter.CatalogXref.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.CatalogXref\obj\Debug\EDIOptions.AppCenter.CatalogXref.csprojResolveAssemblyReference.cache

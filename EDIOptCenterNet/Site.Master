@@ -1,0 +1,276 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EDIOptCenterNet.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="./Css/screen.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/jquery.js" type="text/javascript"></script>
+    <script src="scripts/jquery-ui.js" type="text/javascript"></script>
+    <script src="scripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="scripts/bigslide.min.js" type="text/javascript"></script>
+    <script src="scripts/window.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var appList = <%= appList %>;
+        var cs_mathSolution = <%= challengeSolution %>;
+        var LoggedIn = <%= LoggedIn %>;
+    </script>
+    <% if (false)
+       { %>
+            <script src="Scripts/jquery-vsdoc.js" type="text/javascript"></script>
+    <% } %>
+    <meta name="google-translate-customization" content="19bc91410edfb0f4-9d91977eac6789bb-gf5c96e2fad00c1c2-11" />
+    <!--[if lte IE 8]>
+    <style type="text/css">
+        #BadBrowserDiv {
+            display: block;
+        }
+    </style>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div>
+        <!-- Note: this file is used for the blog as well as the OC -->
+        <!-- Begin: Google Translate -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    gaTrack: true,
+                    gaId: 'UA-22376079-2',
+                    floatPosition: google.translate.TranslateElement.FloatPosition.BOTTOM_RIGHT
+                });
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- Begin: fixed header, if logged in -->
+        <!-- Begin: main frame -->
+
+        <div id="FixedHeadFrame" class="movedHeader" runat="server">
+            <span id="drawerButton" title="Menu">≡</span>
+            <div class="FixedHeadContent">
+                <div class="FixedHeadLeft">
+                    <span style="font-weight:bold;">Partner</span>: <span id="FixedPartnersBtn" class="FixedTopOptions" title="Change your active partner"><%= userPartner %></span>
+                </div>
+                <div class="FixedHeadRight">
+                        <span style="font-weight:bold;">User</span>: <span id="FixedAccountBtn" class="FixedTopOptions" title="Configure account or log off"><span><%= userName%></span> (<%= userCompany%>)</span>
+                </div>
+            </div>
+        </div>
+        <div class="pageContent">
+            <div class="BlackFrame">
+                <div id="mainFrame">
+                    <!-- Begin: no JavaScript support notice -->
+                    <noscript>
+                        <div class="NoJsWarning">
+                            <p class="warning">
+                                JavaScript is not enabled on your browser and this site will not function correctly
+                                without it. Please enable JavaScript then reload this page.</p>
+                        </div>
+                    </noscript>
+                    <!-- Begin: old browser warning -->
+                    <div id="BadBrowserDiv">
+                        <p class="warning">
+                            We have detected that you are using an older browser, and therefore this site may
+                            not run properly for you. Please update your browser.</p>
+                    </div>
+                    <!-- Begin: OptCenter logo -->
+                    <div class="NavFrame">
+                        <!-- Begin: nav logo -->
+                        <div class="NavLogo">
+                            <div id="ReturnHome" class="ReturnHome SmallGreyTxt">
+                                &laquo; Return Home</div>
+                            <asp:HyperLink ID="linkHomepage" CssClass="linkHomepage" runat="server"><img src="images/EDI-OptCenter.png" alt="EDI OptCenter" width="323" height="40" id="OptCenterLogo"></asp:HyperLink>
+                            <asp:Panel ID="divDeNotice" runat="server" Visible="false">
+                                <asp:Label ID="lblDeNotice" CssClass="SmallGreyTxt" runat="server"></asp:Label></asp:Panel>
+                        </div>
+                        <!-- Begin: nav links -->
+                        <div id="NavLinks">
+                            <ul id="mainNav">
+                                <!-- Begin: Documents -->
+                                <!-- Begin: Transactions -->
+                                <!-- Begin: Support -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <!-- clear floats -->
+                    </div>
+                    <!-- Begin: contact support button -->
+                    <img src="images/side-help.png" alt="Contact Support" id="supportBtn">
+                    <!-- Window: contact support window -->
+                    <div id="supportWindow" class="window WindowSm">
+                        <div class="window-head">
+                            <img src="images/x.png" alt="close" width="12" height="10" id="closeSupport" class="window-x"></div>
+                        <img src="images/draggable-footer.png" alt="border" width="1" height="4" class="window-head-foot">
+                        <h2 class="RedBottomHead">
+                            Contact Support</h2>
+                        <div id="SupportFormDiv">
+                            <p class="SmallGreyTxt">
+                                If you are having troubles please use the form below to send an email to the EDI
+                                Options support team at <a href="mailto:support@edioptions.com">support@edioptions.com</a>.
+                                Alternatively, feel free to call us at 516-741-2032 during normal business hours
+                                for immediate service.</p>
+                            <form id="contactSupportForm" name="contactSupportForm" class="BtmMargin" novalidate="novalidate">
+                            <table class="VerticalForm">
+                                <tr>
+                                    <td class="LeftLabel">
+                                        <label for="cs_name">
+                                            Name:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="cs_name" name="cs_name" maxlength="50" value='<%= userName %>'>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="LeftLabel">
+                                        <label for="cs_co">
+                                            Company:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="cs_co" name="cs_co" maxlength="50" value='<%= userCompany %>'>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="LeftLabel">
+                                        <label for="cs_email">
+                                            Email:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="cs_email" name="cs_email" maxlength="50" value='<%= userEmail %>'>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="LeftLabel">
+                                        <label for="cs_notes">
+                                            Message:</label>
+                                    </td>
+                                    <td>
+                                        <textarea id="cs_notes" name="cs_notes" cols="45" rows="4"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td>
+                                        <p style="font-size: 0.7em;">
+                                            To help us differentiate messages submitted by individuals from those automatically
+                                            entered by software please solve the problem below.</p>
+                                            <%= challenge1 %> + <%= challenge2 %> =
+                                    <input type="text" name="cs_mathResponse" id="cs_mathResponse" size="4" maxlength="2" class="captcha"></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0;">
+                                        &nbsp;
+                                    </td>
+                                    <td style="padding: 0;">
+                                        <input id="cs_submit" name="cs_submit" type="button" value="Submit" class="button" style="margin-right: 15px;">
+                                        <input id="cs_reset" name="cs_reset" type="reset" value="Reset" class="button" style="margin-right: 15px;">
+                                        <input type="button" class="button CloseWindowBtn" value="Close Window">
+                                    </td>
+                                </tr>
+                            </table>
+                            </form>
+                            <p style="font-size: 0.7em;">
+                                Note: the name and company fields are not required.</p>
+                        </div>
+                        <div id="SupportResult">
+                            <!-- AJAX placeholder -->
+                        </div>
+                    </div>
+                    <!-- Window: working/loading window -->
+                    <div class="window" id="WindowWorking">
+                        <img src="images/working-animation.gif" style="margin: -20px -20px 20px -20px;">
+                        <p id="WorkingTxt" class="LgWhiteTxt" style="text-align: center">
+                            Working...</p>
+                    </div>
+                    <!-- Window: auto logout notification -->
+                    <div class="window" id="WindowAutoLogout">
+                        <div class="window-head">
+                        </div>
+                        <img src="images/draggable-footer.png" width="1" height="4" class="window-head-foot">
+                        <div class="RedBottomHead" style="margin-bottom: 5px;">
+                            <h2>
+                                Session Ending!</h2>
+                        </div>
+                        <p class="SmallGreyTxt">
+                            You will be logged out in <span id="LogoutCountdown">30</span> seconds due to inactivity.
+                            To continue your session click below.</p>
+                        <input type="button" id="ContinueSession" value="Continue Session" class="button">
+                    </div>
+                    <div class="MainContent">
+                        <!--Partner Window-->
+                        <div id="FixedPartnersWindow" class="PopDownWindow">
+                            <div class="PopDownContent">
+                                <h4>Select Partner</h4>
+                                <div class="PopDownContentScroll">
+                                    <ul id="FixedPartnersList" runat="server">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Account Window-->
+                        <div id="FixedAccountWindow" class="PopDownWindow">
+                            <div class="PopDownContent">
+                                <h4>Account</h4>
+                                <ul>
+                                    <li><a href="LogOut.aspx">Log out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Left Navigation Menu-->
+                        <nav id="menu" class="panel" role="navigation">
+                            <div class="RedBottomHead">
+                                <h2 class="tooltip-head">
+                                    Apps</h2>
+                                <div style="clear: both">
+                                </div>
+                            </div>
+                            <span id="noAppsSpan">No applications present.</span>
+                            <div class="FilterContainer">
+                                <div class="FilterAttributes">
+                                    <div class="CriteriaDiv">
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div class="footer clearfix">
+                <a href="http://www.edioptions.com" target="_blank" style="float: right;">
+                    <img src="images/EDI-Options-logo.png" alt="EDI Options"></a>
+                <p>
+                    <strong>CONTACT US</strong>: Email: <a href="mailto:OptCenter@edioptions.com">OptCenter@edioptions.com</a>
+                    | Phone: <a href="tel:15167412032">1.516.741.2032</a> | Blog: <asp:HyperLink ID="linkBlog" runat="server">edi-optcenter.com/blog</asp:HyperLink>
+                    <br>
+                    &copy;
+                    <% Response.Write(DateTime.Now.Year.ToString()); %>
+                    <a href="http://www.edioptions.com" target="_blank">EDI Options</a>. EDI OptCenter<sup>TM</sup>
+                    is a service mark of EDI Options, Inc. 2011. All rights reserved. | <a href="http://edi-optcenter.com/legal.php">
+                        Legal Information</a></p>
+            </div>
+        </div>
+        </div>
+        <!-- black window masks -->
+        <div id="MaskLg" class="mask">
+        </div>
+        <div id="MaskMed" class="mask">
+        </div>
+        <div id="MaskSm" class="mask">
+        </div>
+        <div id="MaskWorking" class="mask">
+        </div>
+        <div id="MaskAutoLogout" class="mask">
+        </div>
+    </form> 
+    <script src="Scripts/all-pgs.js?t=<% Response.Write(DateTime.Now.ToString("yyyyMMddHHmmssffff")); %>" type="text/javascript"></script>
+</body>
+</html>

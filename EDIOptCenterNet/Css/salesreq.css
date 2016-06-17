@@ -1,0 +1,85 @@
+﻿.ui-autocomplete
+{
+    height:200px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+#storeDiv
+{
+    width:210px;
+}
+
+#weekDiv
+{
+    width:300px;
+}
+
+#controlTable
+{
+    width:auto;
+    margin-bottom:10px;
+}
+
+#controlTable td
+{
+    padding:0 5px 5px 0;
+}
+
+.storeTag
+{
+    margin:3px;
+    padding:1px 2px;
+    display:inline-block;
+}
+
+.storeTag span
+{
+    margin:3px;
+}
+
+.weekTag
+{
+    margin:3px;
+    display:inline-block;
+}
+
+.weekTag span
+{
+    margin:3px;
+}
+
+.RemFilterBtnContainer
+{
+    padding:0;
+    margin:0;
+    list-style:none;
+    float:right;
+}
+
+.AddSub {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: right;
+}
+.AddSub li {
+    width: 20px;
+    height: 20px;
+    background: #7a7a7a;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #FFF;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    float: left;
+}
+
+.scrollTable thead th
+{
+    background-color:#363636;
+}

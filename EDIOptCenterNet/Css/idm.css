@@ -1,0 +1,45 @@
+﻿.distribution
+{
+    margin-bottom: 20px;
+}
+
+.editicon
+{
+    background-image: url(../images/edit-header-data.png);
+}
+
+.applyBox
+{
+    width:80px !important;
+    height:auto !important;
+    background-position:inherit !important;
+    display:inline-block !important;
+    margin-bottom:10px;
+}
+
+.submitDiv
+{
+    text-align:center;
+    margin-top:20px;
+}
+
+td.shortdesc
+{
+    max-width:120px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+td.shortdesc:hover
+{
+    overflow:visible;
+    white-space:normal;
+}
+
+.distributionReadOnly
+{
+    font-size:16px;
+    text-align:left;
+    margin-bottom:20px;
+}

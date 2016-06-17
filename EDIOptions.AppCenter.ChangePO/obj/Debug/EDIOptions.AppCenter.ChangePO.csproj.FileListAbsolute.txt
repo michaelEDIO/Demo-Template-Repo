@@ -1,0 +1,8 @@
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.ChangePO\bin\Debug\EDIOptions.AppCenter.ChangePO.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.ChangePO\bin\Debug\EDIOptions.AppCenter.ChangePO.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.ChangePO\bin\Debug\EDIOptions.AppCenter.Core.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.ChangePO\bin\Debug\Newtonsoft.Json.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.ChangePO\bin\Debug\EDIOptions.AppCenter.Core.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.ChangePO\obj\Debug\EDIOptions.AppCenter.ChangePO.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.ChangePO\obj\Debug\EDIOptions.AppCenter.ChangePO.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.ChangePO\obj\Debug\EDIOptions.AppCenter.ChangePO.csprojResolveAssemblyReference.cache

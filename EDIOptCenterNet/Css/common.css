@@ -1,0 +1,30 @@
+﻿h2,.page, .distribution, table
+{
+    text-transform:none !important;
+    text-align:left !important;
+}
+
+.distribution
+{
+    margin-bottom: 20px;
+}
+
+div.icon
+{
+    width:30px;
+    height:30px;
+    background-position:left top;
+    cursor:pointer;
+    display:inline-block;
+    float:right;
+}
+
+div.icon:hover
+{
+    background-position: left -30px;
+}
+
+div.icon:active
+{
+    background-position: left -60px;
+}

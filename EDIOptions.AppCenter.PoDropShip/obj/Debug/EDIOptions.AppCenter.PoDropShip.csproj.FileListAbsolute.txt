@@ -1,0 +1,8 @@
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.PoDropShip\bin\Debug\EDIOptions.AppCenter.PoDropShip.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.PoDropShip\bin\Debug\EDIOptions.AppCenter.PoDropShip.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.PoDropShip\bin\Debug\EDIOptions.AppCenter.Core.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.PoDropShip\bin\Debug\Newtonsoft.Json.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.PoDropShip\bin\Debug\EDIOptions.AppCenter.Core.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.PoDropShip\obj\Debug\EDIOptions.AppCenter.PoDropShip.dll
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.PoDropShip\obj\Debug\EDIOptions.AppCenter.PoDropShip.pdb
+C:\Github Repos\DemoTemplate\EDI-OptCenter-ASP\EDIOptions.AppCenter.PoDropShip\obj\Debug\EDIOptions.AppCenter.PoDropShip.csprojResolveAssemblyReference.cache
